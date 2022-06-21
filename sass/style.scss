@@ -1,15 +1,18 @@
 //Primary
-
 $Blue: hsl(223, 87%, 63%);
 
 //Secondary
-
 $Pale-Blue: hsl(223, 100%, 88%);
 $Light-Red: hsl(354, 100%, 66%);
 
 //Neutral
 $Gray: hsl(0, 0%, 59%);
 $Very-Dark-Blue: hsl(209, 33%, 12%);
+
+@mixin estiloIconos($fondoColor, $estiloBorde) {
+    background-color: $fondoColor;
+    border-radius: $estiloBorde;
+}
 
 .logo {
     margin: auto;
@@ -72,7 +75,6 @@ $Very-Dark-Blue: hsl(209, 33%, 12%);
         border-color: transparent;
         background-color: $Blue;
         color: white;
-
     }
 }
 
@@ -83,4 +85,24 @@ $Very-Dark-Blue: hsl(209, 33%, 12%);
 
 .msg-copyright{
     font-size: 10px;
+}
+
+.social{
+    height: 20px;
+    padding: 2px;
+}
+
+.facebook:hover{
+    filter: invert(100%);
+   @include estiloIconos(white, 100%);
+}
+
+.twitter:hover{
+    filter: invert(100%);
+   @include estiloIconos(white, 100%);
+}
+
+.instagram:hover{
+    filter: invert(100%);
+    @include estiloIconos(white, 100%);
 }

@@ -59,4 +59,27 @@
   font-size: 10px;
 }
 
+.social {
+  height: 20px;
+  padding: 2px;
+}
+
+.facebook:hover {
+  filter: invert(100%);
+  background-color: white;
+  border-radius: 100%;
+}
+
+.twitter:hover {
+  filter: invert(100%);
+  background-color: white;
+  border-radius: 100%;
+}
+
+.instagram:hover {
+  filter: invert(100%);
+  background-color: white;
+  border-radius: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
