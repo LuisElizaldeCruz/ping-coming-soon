@@ -1,0 +1,41 @@
+.logo {
+  margin: auto;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.top__titulo {
+  margin-bottom: 0;
+}
+.top__mensaje {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.frm {
+  margin-bottom: 30px;
+}
+.frm__input {
+  border: 1px solid hsl(223deg, 100%, 88%);
+  border-radius: 15px;
+  height: 30px;
+  width: 200px;
+  outline: none;
+  padding: 0 20px;
+}
+.frm__input::placeholder {
+  color: hsl(223deg, 100%, 88%);
+}
+.frm__btn {
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  border-color: transparent;
+  background-color: hsl(223deg, 87%, 63%);
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

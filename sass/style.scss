@@ -1,0 +1,60 @@
+//Primary
+
+$Blue: hsl(223, 87%, 63%);
+
+//Secondary
+
+$Pale-Blue: hsl(223, 100%, 88%);
+$Light-Red: hsl(354, 100%, 66%);
+
+//Neutral
+$Gray: hsl(0, 0%, 59%);
+$Very-Dark-Blue: hsl(209, 33%, 12%);
+
+.logo{
+    margin: auto;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__titulo{
+        margin-bottom: 0;
+    }
+
+    &__mensaje{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.frm{
+    margin-bottom: 30px;
+
+    &__input{
+        border: 1px solid $Pale-Blue;
+        border-radius: 15px;
+        //border-color: $Gray;
+        height: 30px;
+        width: 200px;
+        outline: none;
+        padding: 0 20px;
+       
+    }
+
+    &__input::placeholder{
+        color: $Pale-Blue;
+    }
+
+    &__btn{
+        width: 100px;
+        height: 35px;
+        border-radius: 15px;
+        border-color: transparent;
+        background-color: $Blue;
+        color: white;
+        
+    }
+}
