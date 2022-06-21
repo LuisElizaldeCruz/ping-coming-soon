@@ -11,50 +11,76 @@ $Light-Red: hsl(354, 100%, 66%);
 $Gray: hsl(0, 0%, 59%);
 $Very-Dark-Blue: hsl(209, 33%, 12%);
 
-.logo{
+.logo {
     margin: auto;
 }
 
-.top{
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    //text-align: center;
+    align-items: center;
+}
+
+.top {
     display: flex;
     flex-direction: column;
     text-align: center;
-    &__titulo{
-        margin-bottom: 0;
-    }
 
-    &__mensaje{
+
+    &__mensaje {
         margin-top: 5px;
         margin-bottom: 20px;
     }
 
+    &__titulo {
+        font-weight: lighter;
+        color: $Gray;
+        font-size: 2em;
+        margin-bottom: 0;
+
+        &>strong {
+            color: $Very-Dark-Blue;
+        }
+    }
+
 }
 
-.frm{
+.frm {
     margin-bottom: 30px;
 
-    &__input{
+    &__input {
         border: 1px solid $Pale-Blue;
         border-radius: 15px;
         //border-color: $Gray;
         height: 30px;
-        width: 200px;
+        width: 300px;
         outline: none;
         padding: 0 20px;
-       
+
     }
 
-    &__input::placeholder{
+    &__input::placeholder {
         color: $Pale-Blue;
     }
 
-    &__btn{
-        width: 100px;
+    &__btn {
+        width: 150px;
         height: 35px;
         border-radius: 15px;
         border-color: transparent;
         background-color: $Blue;
         color: white;
-        
+
     }
+}
+
+.estadistica {
+    height: 400px;
+    width: 40%;
+}
+
+.msg-copyright{
+    font-size: 10px;
 }
