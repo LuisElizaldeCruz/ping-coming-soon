@@ -23,7 +23,14 @@ form.addEventListener("submit", (e) => {
     }
     else {
         let nodo = document.querySelector(".mensaje");
-        nodo.remove();
-        input.style.setProperty("border-color", "hsl(223, 100%, 88%)");
+
+        if (nodo !== null){
+            console.log("el nodo existe y se borro");
+            nodo.remove();
+            input.style.setProperty("border-color", "hsl(223, 100%, 88%)");
+        }
+        else {
+            console.log("El nodo a eliminar no existe");
+        }
     }
 })
