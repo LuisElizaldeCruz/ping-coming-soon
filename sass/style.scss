@@ -51,7 +51,7 @@ $Very-Dark-Blue: hsl(209, 33%, 12%);
 }
 
 .frm {
-    margin-bottom: 30px;
+    margin-bottom: 0;
 
     &__input {
         border: 1px solid $Pale-Blue;
@@ -66,6 +66,7 @@ $Very-Dark-Blue: hsl(209, 33%, 12%);
 
     &__input::placeholder {
         color: $Pale-Blue;
+        padding-left: 20px;
     }
 
     &__btn {
@@ -81,28 +82,45 @@ $Very-Dark-Blue: hsl(209, 33%, 12%);
 .estadistica {
     height: 400px;
     width: 40%;
+    margin-top: 35px;
 }
 
-.msg-copyright{
+.msg-copyright {
     font-size: 10px;
 }
 
-.social{
+.social {
     height: 20px;
     padding: 2px;
 }
 
-.facebook:hover{
-    filter: invert(100%);
-   @include estiloIconos(white, 100%);
-}
-
-.twitter:hover{
-    filter: invert(100%);
-   @include estiloIconos(white, 100%);
-}
-
-.instagram:hover{
+.facebook:hover {
     filter: invert(100%);
     @include estiloIconos(white, 100%);
+}
+
+.twitter:hover {
+    filter: invert(100%);
+    @include estiloIconos(white, 100%);
+}
+
+.instagram:hover {
+    filter: invert(100%);
+    @include estiloIconos(white, 100%);
+}
+
+@media screen and (max-width: 560px) {
+    .frm__input {
+        width: 82%;
+        padding: 0 20px;
+    }
+
+    .frm__btn {
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    .estadistica {
+        width: 85%;
+    }
 }
